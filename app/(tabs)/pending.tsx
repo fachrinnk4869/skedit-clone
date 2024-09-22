@@ -14,6 +14,18 @@ const initialData = [
     description: 'This is the description for card 1',
     image: 'https://via.placeholder.com/150',
   },
+  {
+    id: '2',
+    title: 'Card 2',
+    description: 'This is the description for card 2',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    id: '3',
+    title: 'Card 3',
+    description: 'This is the description for card 3',
+    image: 'https://via.placeholder.com/150',
+  },
 ];
 
 const Card = ({ title, description, image }) => (
@@ -29,7 +41,7 @@ const Card = ({ title, description, image }) => (
   </CardContainer>
 );
 
-export default function Index() {
+export default function Pending() {
   const [data, setData] = useState(initialData);
 
   const addNewCard = () => {
