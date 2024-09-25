@@ -5,7 +5,7 @@ import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import IndexScreen from '@/app/(tabs)/index';
-import FailedScreen from '@/app/(tabs)/failed';
+import DoneScreen from '@/app/(tabs)/done';
 
 const TopTab = createMaterialTopTabNavigator();
 
@@ -45,10 +45,10 @@ export default function TabLayout() {
         }}
       />
       <TopTab.Screen
-        name="Explore"
-        component={FailedScreen}
+        name="Done"
+        component={DoneScreen}
         options={{
-          title: 'Explore',
+          title: 'Done',
           // tabBarIcon: ({ color, focused }) => (
           //   <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           // ),
